@@ -1,0 +1,99 @@
+FITUR-FITUR INTI ATAU POKOK UTAMA FITUR DALAM APLIKASI NYA NANTI (PROSES PENGEMBANGAN):
+________________________________________
+A. Fitur Inti Aplikasi Novel
+1.	Perpustakaan dan Manajemen Novel
+o	Koleksi Novel: Pengguna dapat menambahkan, mengelompokkan, dan mengorganisasi novel ke dalam rak atau folder (misalnya "Sedang Dibaca," "Favorit," "Akan Dibaca").
+o	Filter & Sorting: Memungkinkan penyaringan novel berdasarkan genre, penulis, rating, tanggal rilis, dan kategori lainnya.
+o	Pencarian Global: Fitur pencarian untuk menemukan novel dari koleksi yang ada maupun dari sumber eksternal.
+2.	Mode Baca dan Tampilan Bacaan
+o	Mode Baca Offline: Pengguna dapat mengunduh dan membaca novel secara offline, sehingga tetap dapat membaca meski tanpa koneksi internet.
+o	Penyesuaian Tampilan: Opsi untuk mengatur ukuran font, jenis huruf, jarak antar baris, margin, dan warna latar belakang (misalnya mode terang, gelap, atau sepia).
+o	Tampilan Adaptif: Tampilan bacaan yang responsif dan disesuaikan dengan ukuran layar serta orientasi perangkat (misalnya mode full-screen untuk pengalaman membaca tanpa gangguan).
+3.	Bookmark dan Riwayat Bacaan
+o	Bookmark: Kemampuan menandai halaman, bab, atau bagian penting dalam novel agar mudah kembali membaca.
+o	Riwayat Bacaan: Pencatatan otomatis posisi terakhir baca dan riwayat novel yang telah dibaca, sehingga pengguna dapat melanjutkan dari titik terakhir.
+4.	Navigasi Antar Bab dan Novel
+o	Navigasi Swipe atau Klik: Pengguna dapat berpindah antar bab dengan mudah (misalnya swipe ke kiri/kanan atau dengan tombol navigasi).
+o	Daftar Isi Interaktif: Menampilkan daftar bab yang lengkap sehingga pengguna dapat langsung melompat ke bab tertentu.
+________________________________________
+B. Fitur Penemuan & Rekomendasi Konten
+5.	Katalog Novel dan Konten Eksternal
+o	Integrasi Sumber Konten: Mendukung banyak sumber novel melalui sistem plugin, sehingga novel dapat diambil dari berbagai website atau database eksternal.
+o	Dynamic Tag Cloud & Kategori: Menampilkan tag dan kategori populer yang memudahkan eksplorasi novel sesuai minat pengguna.
+6.	Rekomendasi Novel
+o	Algoritma Rekomendasi: Memberikan saran novel berdasarkan riwayat bacaan, preferensi, dan perilaku pengguna.
+o	Dashboard Statistik: Menampilkan informasi seperti "Novel Terbaca Hari Ini," "Rekomendasi Untuk Anda," atau "Trending Novel."
+________________________________________
+C. Fitur-Fitur Baru (Advanced & Inovatif)
+7.	Cloud Synchronization (Google Drive) & Multi-Perangkat
+o	Sinkronisasi Progres Bacaan: Membuat pengguna dapat melanjutkan membaca di perangkat berbeda dengan data (progres, bookmark, catatan) yang tersinkron di cloud.
+o	Backup Data: Menyediakan cadangan data secara otomatis untuk mengamankan preferensi dan riwayat bacaan.
+8.	Text-to-Speech (TTS) Mode
+o	Pembacaan Otomatis: Mengonversi teks novel menjadi audio, sehingga pengguna bisa mendengarkan novel.
+o	Pengaturan Suara: Opsi untuk memilih kecepatan bicara, jenis suara, dan penyesuaian lain agar mendukung kenyamanan mendengarkan.
+9.	Pencarian Teks Mendalam
+o	Fitur Pencarian dalam Novel: Memungkinkan pencarian kata atau frasa dalam keseluruhan teks novel untuk menemukan informasi spesifik dengan cepat.
+o	Highlight Hasil Pencarian: Menyorot bagian teks yang mengandung hasil pencarian agar mudah ditemukan.
+10.	Notifikasi Cerdas dan Pembaruan Konten
+o	Pemberitahuan Update: Notifikasi real-time ketika ada bab baru atau pembaruan dari novel yang diikuti pengguna.
+o	Notifikasi Adaptif: Menyesuaikan frekuensi notifikasi berdasarkan pola membaca dan minat pengguna, serta menyediakan notifikasi “rich” yang menampilkan cover dan sinopsis singkat.
+11.	Bookmark Interaktif, Highlight, & Catatan
+o	Highlight Teks: Memungkinkan pengguna untuk menyorot teks favorit dengan opsi menyimpan highlight tersebut.
+o	Catatan Pribadi: Menambahkan catatan atau komentar pribadi pada bagian-bagian tertentu dalam novel yang dapat disimpan dan dilihat kembali.
+________________________________________
+D. Fitur Pendukung Pengalaman Pengguna (UX/UI)
+12.	Antarmuka Pengguna (UI) yang Modern dan Intuitif
+o	Navigasi Lengkap: Bottom navigation bar dengan menu seperti Home, Genre, Library, dan Settings yang menjaga state setiap halaman agar pengalaman navigasi tetap mulus.
+o	Halaman Beranda Dinamis: Menampilkan rekomendasi, novel unggulan, dan statistik baca secara visual menarik.
+o	Desain Responsif: UI yang mudah beradaptasi di berbagai ukuran layar dan perangkat.
+o	Dibawah ini ada beberapa saran atau tambahan/masukan dari Saya secara Pribadi:
+	1. Halaman Home (Beranda) = Saran Tambahan untuk Halaman Home
+	•	Header: Menyediakan fitur pencarian dengan ikon search dan ikon notifikasi jika ada update terkait novel terbaru atau bacaan favorit.
+	•	Banner Rekomendasi: Tampilkan rekomendasi novel terbaru atau trending. Banner bisa menampilkan cover novel besar yang menarik untuk memancing minat.
+	•	Novel Terpopuler & Terbaru: Daftar novel yang sedang populer dan yang baru saja dirilis, dengan gambar cover dan ringkasan singkat.
+	•	Novel yang Sedang Dibaca: Bagian khusus yang menampilkan novel yang terakhir kali dibaca. Pengguna bisa langsung melanjutkan membaca dari sini.
+	•	Daftar Novel dan Kategori di Halaman Beranda: Tampilkan daftar novel dengan filter dan pencarian di halaman beranda, memungkinkan pengguna untuk menemukan novel baru sesuai preferensi mereka.
+	2. Halaman Library (Perpustakaan) = Saran Tambahan untuk Halaman Library
+	•	Fitur ini memungkinkan pengguna untuk mengelola koleksi novel mereka dengan beberapa fitur berikut:
+	•	Daftar Bacaan: Menampilkan novel yang sedang dibaca, dengan status progres pembacaan dan opsi untuk melanjutkan chapter/bab novel dari halaman terakhir.
+	•	Favorit/Disimpan/Bookmark: Novel yang disimpan atau diberi tanda bookmark untuk dibaca nanti.
+	•	Riwayat Bacaan: Menyimpan semua novel yang pernah dibaca, sehingga pengguna bisa membaca ulang atau meninjau kembali novel yang sudah mereka selesaikan.
+	3. Halaman Menu dan Navigasi Genre = Saran Tambahan untuk Menu dan Navigasi
+	•	Fitur ini memungkinkan pengguna untuk menjelajah novel berdasarkan genre seperti romantis, fantasi, horor, komedi, dan lainnya.
+	•	Dihalaman ini akan menampilkan novel dengan genre yang telah dipilih pengguna/user.
+
+	4. Novel Reading Screen (Halaman membaca Chapter atau Bab pada Novel) = Saran Tambahan untuk Halaman Novel Reading Screen
+	•	Minimalist Reading Interface: Layar membaca yang sederhana dengan fokus pada teks. Latar belakang bisa disesuaikan (mode terang, gelap, sepia).
+	•	Progress Bar Halaman: Di bagian bawah layar terdapat progress bar yang menunjukkan berapa banyak halaman atau bab yang tersisa. Pengguna juga bisa melihat waktu perkiraan untuk menyelesaikan bab.
+	•	Fitur Scroll Halaman: Pengguna bisa memilih mode membaca dengan scroll vertikal atau halaman swipe horizontal.
+	•	Mode malam (Night Mode).
+	5. Novel Detail Page (Halaman Detail Novel) = Saran Tambahan untuk Halaman Novel Detail Page
+	•	Sampul Novel, Judul, & Penulis: Di bagian atas, pengguna dapat melihat sampul besar novel, judul, dan penulis dengan jelas.
+	•	Sinopsis & Detail: Sinopsis singkat novel dengan informasi tambahan seperti jumlah bab, genre, dan waktu rata-rata membaca.
+	•	Daftar Bab: Menampilkan daftar semua bab dengan status apakah bab sudah dibaca atau belum. Pengguna bisa mengetuk bab tertentu untuk 
+	•	Bookmark Buku: Pengguna dapat menandai atau menyimpan judul novel yang akan ditampikan di Library/Daftar Buku.
+	•	Statistik Pembacaan: Menampilkan statistik pembacaan seperti total waktu membaca, jumlah bab yang telah dibaca, dan novel yang telah diselesaikan oleh pengguna.
+	•	Tanda Selesai (Completed Status): Aplikasi harus secara otomatis menandai novel sebagai "Selesai Dibaca" setelah semua bab terselesaikan, memudahkan pengelolaan perpustakaan pribadi pengguna.
+	•	Fitur Pembacaan Berlanjut (Continue Reading): Saat pengguna memilih dan membuka novel tersebut, mereka langsung disajikan tombol "Continue Reading" yang membawa mereka ke chapter sebelumnya dan diarahkan ke halaman pembacaan novel terakhir novel yang sedang dibaca.
+13.	Profil Pengguna dan Personalisasi
+o	Pengaturan Profil: Pengguna dapat mengatur profil, menyimpan preferensi bacaan, dan mengatur tampilan antarmuka sesuai keinginan.
+o	Analitik Bacaan: Statistik pribadi seperti total waktu membaca, jumlah novel selesai, dan rekomendasi berbasis riwayat membaca.
+14.	Widget dan Fitur Cepat Akses
+o	Widget “Lanjutkan Bacaan”: Widget di layar utama perangkat yang menampilkan novel terakhir yang dibaca dan memungkinkan melanjutkan dengan cepat.
+o	Integrasi Notifikasi: Widget atau badge yang menampilkan update terbaru dari novel yang diikuti.
+________________________________________
+E. Fitur Manajemen Unduhan dan Konten
+15.	Download Manager dan Prefetching Konten
+o	Manajemen Unduhan: Fitur untuk mengelola antrian unduhan bab secara terstruktur, dengan opsi pause/resume.
+o	Prefetching Otomatis: Mengunduh bab berikutnya secara otomatis berdasarkan pola membaca pengguna agar transisi antar bab lebih cepat.
+16.	Modularisasi Sumber Konten (Plugin System)
+o	Ekstensi Sumber Novel: Memungkinkan pengembang atau pihak ketiga menambahkan sumber novel baru tanpa harus mengubah aplikasi inti.
+o	Update Ekstensi Mandiri: Sumber konten dapat diperbarui secara independen, sehingga novel yang tersedia selalu up-to-date.
+________________________________________
+Ringkasan Alur Proses Pengalaman Pengguna
+•	Awal: Pengguna mengakses aplikasi dan menemukan novel melalui katalog, pencarian, atau rekomendasi.
+•	Saat Membaca: Pengguna memilih novel dan masuk ke mode baca dengan tampilan yang dapat dikustomisasi (font, tema, dll). Pengguna dapat mengunduh bab untuk membaca offline, menandai bab atau bagian penting, dan menambahkan highlight serta catatan.
+•	Selama dan Setelah Membaca: Progres baca, bookmark, dan catatan tersimpan dan tersinkronisasi di database lokal/tersimpan di cache dan juga di Cloud, sehingga pengguna dapat melanjutkan di perangkat lain. Fitur pencarian dalam novel memungkinkan eksplorasi konten dengan cepat.
+•	Notifikasi & Pembaruan: Pengguna mendapatkan notifikasi cerdas jika ada bab baru atau update dari novel yang diikuti.
+•	Fitur Inovatif: Mode TTS memungkinkan mendengarkan novel.
+________________________________________
