@@ -1,0 +1,197 @@
+Dokumentasi, Panduan atau Langkah-Langkah, dan Tugas Permintaan Pengembangan Aplikasi Baca Novel kepada Anda.
+
+> Arsitektur modular dan teknologi terbaik yang akan digunakan, termasuk pendekatan arsitektur MVVM Clean Architecture agar kode terorganisir dengan baik dan mudah dikembangkan lebih lanjut.
+> Optimasi performa, khususnya dalam parsing data, untuk memastikan kecepatan tinggi dan menghilangkan bottleneck yang mungkin terjadi.
+> Peningkatan UI/UX agar pengalaman membaca novel nyaman, intuitif, dan modern.
+> Best practices dalam pengembangan aplikasi baca novel, mulai dari desain sistem, pemilihan library, hingga testing dan maintenance.
+
+FITUR-FITUR INTI ATAU POKOK UTAMA FITUR DALAM APLIKASI NYA NANTI (PROSES PENGEMBANGAN):
+________________________________________
+A. Fitur Inti Aplikasi Novel
+1.	Perpustakaan dan Manajemen Novel
+o	Koleksi Novel: Pengguna dapat menambahkan, mengelompokkan, dan mengorganisasi novel ke dalam rak atau folder (misalnya "Sedang Dibaca," "Favorit," "Akan Dibaca").
+o	Filter & Sorting: Memungkinkan penyaringan novel berdasarkan genre, penulis, rating, tanggal rilis, dan kategori lainnya.
+o	Pencarian Global: Fitur pencarian untuk menemukan novel dari koleksi yang ada maupun dari sumber eksternal.
+2.	Mode Baca dan Tampilan Bacaan
+o	Mode Baca Offline: Pengguna dapat mengunduh dan membaca novel secara offline, sehingga tetap dapat membaca meski tanpa koneksi internet.
+o	Penyesuaian Tampilan: Opsi untuk mengatur ukuran font, jenis huruf, jarak antar baris, margin, dan warna latar belakang (misalnya mode terang, gelap, atau sepia).
+o	Tampilan Adaptif: Tampilan bacaan yang responsif dan disesuaikan dengan ukuran layar serta orientasi perangkat (misalnya mode full-screen untuk pengalaman membaca tanpa gangguan).
+3.	Bookmark dan Riwayat Bacaan
+o	Bookmark: Kemampuan menandai halaman, bab, atau bagian penting dalam novel agar mudah kembali membaca.
+o	Riwayat Bacaan: Pencatatan otomatis posisi terakhir baca dan riwayat novel yang telah dibaca, sehingga pengguna dapat melanjutkan dari titik terakhir.
+4.	Navigasi Antar Bab dan Novel
+o	Navigasi Swipe atau Klik: Pengguna dapat berpindah antar bab dengan mudah (misalnya swipe ke kiri/kanan atau dengan tombol navigasi).
+o	Daftar Isi Interaktif: Menampilkan daftar bab yang lengkap sehingga pengguna dapat langsung melompat ke bab tertentu.
+________________________________________
+B. Fitur Penemuan & Rekomendasi Konten
+5.	Katalog Novel dan Konten Eksternal
+o	Integrasi Sumber Konten: Mendukung banyak sumber novel melalui sistem plugin, sehingga novel dapat diambil dari berbagai website atau database eksternal.
+o	Dynamic Tag Cloud & Kategori: Menampilkan tag dan kategori populer yang memudahkan eksplorasi novel sesuai minat pengguna.
+6.	Rekomendasi Novel
+o	Algoritma Rekomendasi: Memberikan saran novel berdasarkan riwayat bacaan, preferensi, dan perilaku pengguna.
+o	Dashboard Statistik: Menampilkan informasi seperti "Novel Terbaca Hari Ini," "Rekomendasi Untuk Anda," atau "Trending Novel."
+________________________________________
+C. Fitur-Fitur Baru (Advanced & Inovatif)
+7.	Cloud Synchronization (Google Drive) & Multi-Perangkat
+o	Sinkronisasi Progres Bacaan: Membuat pengguna dapat melanjutkan membaca di perangkat berbeda dengan data (progres, bookmark, catatan) yang tersinkron di cloud.
+o	Backup Data: Menyediakan cadangan data secara otomatis untuk mengamankan preferensi dan riwayat bacaan.
+8.	Text-to-Speech (TTS) Mode
+o	Pembacaan Otomatis: Mengonversi teks novel menjadi audio, sehingga pengguna bisa mendengarkan novel.
+o	Pengaturan Suara: Opsi untuk memilih kecepatan bicara, jenis suara, dan penyesuaian lain agar mendukung kenyamanan mendengarkan.
+9.	Pencarian Teks Mendalam
+o	Fitur Pencarian dalam Novel: Memungkinkan pencarian kata atau frasa dalam keseluruhan teks novel untuk menemukan informasi spesifik dengan cepat.
+o	Highlight Hasil Pencarian: Menyorot bagian teks yang mengandung hasil pencarian agar mudah ditemukan.
+10.	Notifikasi Cerdas dan Pembaruan Konten
+o	Pemberitahuan Update: Notifikasi real-time ketika ada bab baru atau pembaruan dari novel yang diikuti pengguna.
+o	Notifikasi Adaptif: Menyesuaikan frekuensi notifikasi berdasarkan pola membaca dan minat pengguna, serta menyediakan notifikasi “rich” yang menampilkan cover dan sinopsis singkat.
+11.	Bookmark Interaktif, Highlight, & Catatan
+o	Highlight Teks: Memungkinkan pengguna untuk menyorot teks favorit dengan opsi menyimpan highlight tersebut.
+o	Catatan Pribadi: Menambahkan catatan atau komentar pribadi pada bagian-bagian tertentu dalam novel yang dapat disimpan dan dilihat kembali.
+________________________________________
+D. Fitur Pendukung Pengalaman Pengguna (UX/UI)
+12.	Antarmuka Pengguna (UI) yang Modern dan Intuitif
+o	Navigasi Lengkap: Bottom navigation bar dengan menu seperti Home, Genre, Library, dan Settings yang menjaga state setiap halaman agar pengalaman navigasi tetap mulus.
+o	Halaman Beranda Dinamis: Menampilkan rekomendasi, novel unggulan, dan statistik baca secara visual menarik.
+o	Desain Responsif: UI yang mudah beradaptasi di berbagai ukuran layar dan perangkat.
+o	Dibawah ini ada beberapa saran atau tambahan/masukan dari Saya secara Pribadi:
+	1. Halaman Home (Beranda) = Saran Tambahan untuk Halaman Home
+	•	Header: Menyediakan fitur pencarian dengan ikon search dan ikon notifikasi jika ada update terkait novel terbaru atau bacaan favorit.
+	•	Banner Rekomendasi: Tampilkan rekomendasi novel terbaru atau trending. Banner bisa menampilkan cover novel besar yang menarik untuk memancing minat.
+	•	Novel Terpopuler & Terbaru: Daftar novel yang sedang populer dan yang baru saja dirilis, dengan gambar cover dan ringkasan singkat.
+	•	Novel yang Sedang Dibaca: Bagian khusus yang menampilkan novel yang terakhir kali dibaca. Pengguna bisa langsung melanjutkan membaca dari sini.
+	•	Daftar Novel dan Kategori di Halaman Beranda: Tampilkan daftar novel dengan filter dan pencarian di halaman beranda, memungkinkan pengguna untuk menemukan novel baru sesuai preferensi mereka.
+	2. Halaman Library (Perpustakaan) = Saran Tambahan untuk Halaman Library
+	•	Fitur ini memungkinkan pengguna untuk mengelola koleksi novel mereka dengan beberapa fitur berikut:
+	•	Daftar Bacaan: Menampilkan novel yang sedang dibaca, dengan status progres pembacaan dan opsi untuk melanjutkan chapter/bab novel dari halaman terakhir.
+	•	Favorit/Disimpan/Bookmark: Novel yang disimpan atau diberi tanda bookmark untuk dibaca nanti.
+	•	Riwayat Bacaan: Menyimpan semua novel yang pernah dibaca, sehingga pengguna bisa membaca ulang atau meninjau kembali novel yang sudah mereka selesaikan.
+	3. Halaman Menu dan Navigasi Genre = Saran Tambahan untuk Menu dan Navigasi
+	•	Fitur ini memungkinkan pengguna untuk menjelajah novel berdasarkan genre seperti romantis, fantasi, horor, komedi, dan lainnya.
+	•	Dihalaman ini akan menampilkan novel dengan genre yang telah dipilih pengguna/user.
+
+	4. Novel Reading Screen (Halaman membaca Chapter atau Bab pada Novel) = Saran Tambahan untuk Halaman Novel Reading Screen
+	•	Minimalist Reading Interface: Layar membaca yang sederhana dengan fokus pada teks. Latar belakang bisa disesuaikan (mode terang, gelap, sepia).
+	•	Progress Bar Halaman: Di bagian bawah layar terdapat progress bar yang menunjukkan berapa banyak halaman atau bab yang tersisa. Pengguna juga bisa melihat waktu perkiraan untuk menyelesaikan bab.
+	•	Fitur Scroll Halaman: Pengguna bisa memilih mode membaca dengan scroll vertikal atau halaman swipe horizontal.
+	•	Mode malam (Night Mode).
+	5. Novel Detail Page (Halaman Detail Novel) = Saran Tambahan untuk Halaman Novel Detail Page
+	•	Sampul Novel, Judul, & Penulis: Di bagian atas, pengguna dapat melihat sampul besar novel, judul, dan penulis dengan jelas.
+	•	Sinopsis & Detail: Sinopsis singkat novel dengan informasi tambahan seperti jumlah bab, genre, dan waktu rata-rata membaca.
+	•	Daftar Bab: Menampilkan daftar semua bab dengan status apakah bab sudah dibaca atau belum. Pengguna bisa mengetuk bab tertentu untuk 
+	•	Bookmark Buku: Pengguna dapat menandai atau menyimpan judul novel yang akan ditampikan di Library/Daftar Buku.
+	•	Statistik Pembacaan: Menampilkan statistik pembacaan seperti total waktu membaca, jumlah bab yang telah dibaca, dan novel yang telah diselesaikan oleh pengguna.
+	•	Tanda Selesai (Completed Status): Aplikasi harus secara otomatis menandai novel sebagai "Selesai Dibaca" setelah semua bab terselesaikan, memudahkan pengelolaan perpustakaan pribadi pengguna.
+	•	Fitur Pembacaan Berlanjut (Continue Reading): Saat pengguna memilih dan membuka novel tersebut, mereka langsung disajikan tombol "Continue Reading" yang membawa mereka ke chapter sebelumnya dan diarahkan ke halaman pembacaan novel terakhir novel yang sedang dibaca.
+13.	Profil Pengguna dan Personalisasi
+o	Pengaturan Profil: Pengguna dapat mengatur profil, menyimpan preferensi bacaan, dan mengatur tampilan antarmuka sesuai keinginan.
+o	Analitik Bacaan: Statistik pribadi seperti total waktu membaca, jumlah novel selesai, dan rekomendasi berbasis riwayat membaca.
+14.	Widget dan Fitur Cepat Akses
+o	Widget “Lanjutkan Bacaan”: Widget di layar utama perangkat yang menampilkan novel terakhir yang dibaca dan memungkinkan melanjutkan dengan cepat.
+o	Integrasi Notifikasi: Widget atau badge yang menampilkan update terbaru dari novel yang diikuti.
+________________________________________
+E. Fitur Manajemen Unduhan dan Konten
+15.	Download Manager dan Prefetching Konten
+o	Manajemen Unduhan: Fitur untuk mengelola antrian unduhan bab secara terstruktur, dengan opsi pause/resume.
+o	Prefetching Otomatis: Mengunduh bab berikutnya secara otomatis berdasarkan pola membaca pengguna agar transisi antar bab lebih cepat.
+16.	Modularisasi Sumber Konten (Plugin System)
+o	Ekstensi Sumber Novel: Memungkinkan pengembang atau pihak ketiga menambahkan sumber novel baru tanpa harus mengubah aplikasi inti.
+o	Update Ekstensi Mandiri: Sumber konten dapat diperbarui secara independen, sehingga novel yang tersedia selalu up-to-date.
+________________________________________
+Ringkasan Alur Proses Pengalaman Pengguna
+•	Awal: Pengguna mengakses aplikasi dan menemukan novel melalui katalog, pencarian, atau rekomendasi.
+•	Saat Membaca: Pengguna memilih novel dan masuk ke mode baca dengan tampilan yang dapat dikustomisasi (font, tema, dll). Pengguna dapat mengunduh bab untuk membaca offline, menandai bab atau bagian penting, dan menambahkan highlight serta catatan.
+•	Selama dan Setelah Membaca: Progres baca, bookmark, dan catatan tersimpan dan tersinkronisasi di database lokal/tersimpan di cache dan juga di Cloud, sehingga pengguna dapat melanjutkan di perangkat lain. Fitur pencarian dalam novel memungkinkan eksplorasi konten dengan cepat.
+•	Notifikasi & Pembaruan: Pengguna mendapatkan notifikasi cerdas jika ada bab baru atau update dari novel yang diikuti.
+•	Fitur Inovatif: Mode TTS memungkinkan mendengarkan novel.
+________________________________________
+}
+}
+==============================
+Dengan mengikuti panduan dibawah ini, diharapkan aplikasi novel yang dikembangkan akan cepat, stabil, mudah dikembangkan, dan memuaskan kebutuhan pengguna secara komprehensif.
+
+A. Arsitektur Modular dan Teknologi Terbaik
+Kita akan mengadopsi arsitektur modular berbasis MVVM (Model-View-ViewModel) yang dipadukan dengan Clean Architecture. Dalam arsitektur ini, komponen aplikasi dipisah menjadi layer-layer dengan tanggung jawab berbeda (misalnya Presentation/UI, Domain/Bisnis, dan Data). Tujuan utamanya adalah separasi of concerns yang jelas sehingga tiap komponen berdiri sendiri dan dapat dikembangkan atau diuji secara independen​. Prinsip Clean Architecture juga menekankan dependency rule: layer terdalam (logika bisnis) tidak boleh bergantung pada layer luar (framework, UI, database)​. Penerapan pola ini memberi sejumlah keuntungan besar, antara lain: kode lebih mudah dimodifikasi di kemudian hari, loose coupling (komponen tidak saling bergantung erat), dan pengujian kode jadi lebih mudah​
+Dalam konteks aplikasi novel, berikut adalah keputusan arsitektur dan teknologi yang disarankan:
+> Multi-Module & Plug-in Architecture:
+ ~~ Kode sumber aplikasi sebaiknya dipecah menjadi beberapa module (misalnya module core, UI, data, network, feature) sehingga pengembangan dapat parallel dan fitur bisa ditambahkan tanpa mempengaruhi modul lain. Tachiyomi contohnya memisahkan “source” ekstensi (untuk parsing sumber konten) ke dalam modul terpisah. 
+ ~~ Pendekatan plugin/ekstensi ini dapat diadopsi untuk novel: engine aplikasi inti memuat konten dari berbagai sumber novel melalui modul tersendiri. Dengan demikian, menambah sumber novel baru cukup dengan menambahkan modul/ekstensi baru tanpa mengubah aplikasi inti (prinsip Open/Closed terpenuhi).
+
+> MVVM: 
+ ~~ Di tingkat implementasi, gunakan pola MVVM untuk memisahkan logic dengan tampilan. View (Activity/Fragment) hanya bertugas sebagai presenter UI, ViewModel menangani logic antarmuka dan berkomunikasi dengan layer Domain (Use Case) dan Data (Repository). 
+ ~~ Setiap kasus penggunaan (misal: mengambil daftar novel populer, menandai bab telah dibaca) direpresentasikan sebagai UseCase di domain layer. ViewModel memanggil UseCase, lalu UseCase akan berinteraksi dengan Repository (bagian dari data layer) yang mengelola sumber data (entah itu API web, database lokal, maupun cache). Pola ini memastikan logika bisnis terpisah dari detail implementasi (UI, DB, dsb), sehingga misalnya mengganti database atau mengubah UI (dari XML ke Compose, atau bahkan ke platform lain) tidak mengharuskan perubahan pada logika inti aplikasi 
+
+> Pemilihan Teknologi Platform: 
+ ~~ Untuk performa optimal dan kontrol penuh terhadap fitur Android, pilihan terbaik adalah native Android development dengan Kotlin. Kotlin modern mendukung coroutine untuk concurrency, ekstensi DSL, dan merupakan bahasa utama yang digunakan Tachiyomi/Mihon sehingga komunitasnya kuat. 
+ ~~ Kita dapat memanfaatkan Android Jetpack (ViewModel, LiveData/Flow, Room, WorkManager, dll) untuk mempercepat development. Untuk UI, kita dapat mulai dengan XML + Android Views atau langsung memakai Jetpack Compose (framework UI deklaratif modern). Jetpack Compose dapat mempercepat pembuatan UI dan mengurangi kode boilerplate, serta cocok dengan MVVM (State hoisting via ViewModel).
+
+> Library dan Tools:
+ ~~ unakan library populer yang terbukti handal untuk tugas spesifik. Untuk networking dan parsing, Tachiyomi mengandalkan OkHttp (HTTP client) dan Jsoup (HTML parser)​. Kita juga bisa memakai Retrofit di atas OkHttp untuk mempermudah definisi REST API (jika ada API JSON). Namun karena banyak novel diambil dari situs HTML, web scraping dengan Jsoup akan dominan. Jsoup dapat mengurai HTML dengan cepat dan mendukung CSS selector, mempermudah ekstraksi konten. 
+ ~~ Di sisi penyimpanan lokal, gunakan Room (SQLite ORM) untuk database lokal (menyimpan daftar novel, detail bab, progress bacaan, dll) karena Room teruji dan terintegrasi dengan LiveData/Flow. Untuk dependency injection, mempertimbangkan Hilt/Dagger bisa bermanfaat agar setiap komponen memperoleh dependensi (Repo, UseCase, dsb) secara efisien dan modulernya terjaga – meski ini bisa menambah learning curve, DI container membantu pengujian unit (dengan injeksi mock). Terakhir, manfaatkan WorkManager untuk tugas latar belakang terjadwal (misal sinkronisasi atau update perpustakaan berkala). Semua teknologi ini akan membentuk kerangka kokoh: Clean Architecture memastikan keteraturan, dan pemilihan tools modern memastikan kinerja dan developer experience yang optimal.
+ 
+> Sistem Ekstensi Sumber Novel:
+ ~~ Ini adalah sumber ekstensi terpisah untuk mengakses atau semacamnya, (bahkan didistribusikan sebagai plugin terpisah), kita dapat merancang modular source providers untuk novel. Misalnya, modul source-api mendefinisikan antarmuka umum (interface) untuk sumber novel (metode untuk searchNovel(query), getNovelDetail(id), getChapterList(novelId), getChapterContent(chapterId) dan seterusnya), lalu setiap situs atau sumber novel diimplementasikan sebagai modul yang mengisi interface itu. Aplikasi inti hanya berkomunikasi dengan interface, tidak peduli detail tiap sumber.
+ ~~ Aplikasi inti hanya berkomunikasi dengan interface, tidak peduli detail tiap sumber. Pendekatan ini advanced namun sangat fleksibel – sumber dapat ditambah/diperbarui tanpa harus merilis ulang seluruh aplikasi (jika dibuat sebagai plugin terpisah). Pengguna cukup menginstal atau memperbarui “ekstensi” untuk sumber baru. 
+ ~~ Implementasi tidak ribet karena kita bisa mencontoh struktur Tachiyomi: buat Gradle module template untuk ekstensi, pakai konfigurasi serupa Tachiyomi Extension (prinsipnya ada main class yang extends Source base class dan menggunakan OkHttp+Jsoup untuk fetch+parse). Bagi yang tidak ingin menggunakan APK terpisah, modul sumber bisa juga dibundel di aplikasi tapi secara logis tetap terpisah package, sehingga penambahan sumber baru hanya menyentuh package itu saja.
+ 
+B. Optimasi Performa dan Parsing Data
+Salah satu fokus utama adalah mengoptimalkan proses parsing data agar aplikasi dapat memuat novel dan bab dengan cepat tanpa hambatan. Parsing data di sini mencakup pengambilan data dari internet (web scraping atau API) maupun pemrosesan data lokal (membaca file/DB). Beberapa strategi optimasi yang akan diterapkan:
+> Multi-threading & Async Processing:
+ ~~ Pastikan semua operasi IO berat (mengambil konten web, parsing HTML, baca/tulis database, dekompresi gambar jika ada) dijalankan di background thread. Manfaatkan Kotlin Coroutines (suspend functions, Dispatchers.IO) untuk menulis kode asynchronous yang simpel. Dengan ini, UI thread tidak akan blok ketika novel sedang di-download atau diurai. Sebagai contoh, saat pengguna membuka sebuah novel, lakukan fetch daftar bab di background dan tampilkan spinner loading di UI. Begitu data siap, update UI melalui Main thread. Pola ini mencegah “app not responding” dan memberikan pengalaman mulus.
+
+> Efficient HTML Parsing:
+ ~~ Untuk novel yang bersumber dari halaman web (misalnya situs web novel fan-translation), gunakan pendekatan parsing yang efisien. Jsoup sudah cukup cepat untuk banyak kasus, tapi kita bisa optimalkan dengan: hanya parse bagian HTML yang dibutuhkan (gunakan selector yang spesifik untuk menghindari parsing keseluruhan DOM), buang tag/skrip yang tidak diperlukan sedini mungkin, dan pertimbangkan caching.
+ ~~ Misal, setelah parse daftar bab pertama kali, simpan hasilnya di database sehingga saat user membuka novel tersebut lagi, aplikasi bisa menampilkan daftar bab dari cache lokal dulu (instant), baru di belakang layar mengecek update baru. Pendekatan cache-aside ini mengurangi frekuensi parsing. Selain itu, pertimbangkan penggunaan pagination jika daftar bab sangat panjang – misalnya hanya memuat 50 bab terlebih dahulu, dengan opsi “Muat lebih...” jika diperlukan, agar tidak mem-parsing ribuan entri sekaligus.
+
+> Optimasi Jaringan dan Response Caching:
+ ~~ Manfaatkan fitur caching HTTP dari OkHttp. Kita dapat mengkonfigurasi OkHttpClient dengan cache disk – sehingga jika user membuka bab yang sama berulang kali, atau berpindah bab mundur, konten yang sama tidak perlu di-download ulang (jika belum kadaluarsa). Gunakan header HTTP (ETag, Last-Modified) untuk melakukan conditional GET, sehingga server hanya mengirim data jika ada perubahan.
+ ~~ Ini mengurangi trafik dan mempercepat load. Juga, aktifkan gzip compression di header request agar data teks novel yang dikirim terkompresi (kebanyakan server mendukung ini), mempercepat transfer.
+
+> Lazy Loading & Pagination:
+ ~~ Terapkan lazy loading di mana masuk akal. Misalnya untuk konten teks bab yang sangat panjang, jangan langsung render semua teks sekaligus jika tidak diperlukan. Bisa gunakan paging per layar atau virtualized list. Namun, karena novel biasanya teks, kita bisa juga load penuh satu bab karena relatif ringan (kecuali bab puluhan ribu kata).
+ ~~ Yang lebih penting adalah jika pengguna scroll cepat melalui bab, pastikan rendering text tidak lag – gunakan komponen text view yang dioptimize (misal di Compose gunakan LazyColumn jika perlu). Untuk daftar novel di perpustakaan atau hasil pencarian, terapkan endless scroll (memuat bertahap) agar tidak freeze saat memuat ribuan item.
+ 
+> Prefetching Strategis:
+ ~~ Untuk meningkatkan persepsi kecepatan, lakukan prefetch data yang kemungkinan akan diakses user selanjutnya. Misal, saat user membaca Bab 1, di background kita bisa mulai mempersiapkan Bab 2 (download & parse) sebelum user menggeser halaman. Jadi ketika user sampai di bab berikutnya, konten sudah siap.
+ ~~ Demikian pula saat user membuka detail sebuah novel, kita bisa mulai mengambil beberapa bab pertama di belakang layar. Tentu, ini perlu diatur hati-hati untuk tidak membebani jaringan berlebihan; bisa aktifkan prefetch hanya di Wi-Fi atau sesuai setting pengguna.
+ 
+> Memory Cache:
+ ~~ Selain disk cache, gunakan memory cache untuk data yang sering digunakan. Contoh: cache objek NovelDetail atau ChapterList terbaru di ViewModel atau repository sehingga jika user navigasi bolak-balik antara layar, tidak perlu parse/ambil ulang setiap kali.
+ ~~ Pastikan cache memory dibersihkan sesuai kebutuhan (misal gunakan LruCache dengan size limit untuk cover image atau text snippet kalau ada).
+ 
+> Optimasi Database:
+ ~~ Jika aplikasi menyimpan ribuan data (misal riwayat bacaan, daftar semua bab dari banyak novel), pastikan database terindeks dengan baik. Gunakan Room dengan definisi indeks pada kolom yang sering dicari (misal kolom novelId pada tabel Chapter untuk cepat mengambil bab per novel). 
+ ~~ Manfaatkan query bergabung (JOIN) agar sekali akses bisa mendapatkan data terpadu daripada melakukan banyak query kecil berulang. Juga, gunakan transaksi untuk operasi batch insert agar lebih efisien.
+ 
+> Threading Model:
+ ~~ Hati-hati dengan thread contention. Jika kita melakukan banyak pekerjaan paralel, batasi jumlah thread agar tidak saling menghambat. Kotlin coroutines + Dispatchers.IO secara default sudah memiliki thread pool yang efisien. Namun, hindari meluncurkan ratusan coroutine sekaligus tanpa kontrol.
+ ~~ Gunakan coroutine scope dan job yang teratur (misal untuk prefetch atau update periodik, gunakan WorkManager atau CoroutineScope terjadwal supaya tidak terjadi penumpukan tugas). Tujuannya supaya aplikasi tetap responsif di segala situasi.
+ 
+C. Peningkatan UI/UX Aplikasi
+Selain arsitektur dan fitur, pengalaman pengguna (User Experience) dan antarmuka pengguna (User Interface) harus mendapat perhatian khusus. Sasaran kita adalah UI yang bersih, intuitif, modern dan estetik, serta UX yang nyaman dan memudahkan pembaca dalam setiap interaksi. Beberapa pedoman UI/UX dan perbaikan yang akan diterapkan:
+> Desain Antarmuka Bersih dan Terfokus:
+ ~~ Layar utama aplikasi (Library) akan menampilkan koleksi novel pengguna dengan tampilan cover yang jelas, judul, dan mungkin progress baca. Gunakan desain Material Design modern agar familiar bagi pengguna Android. Minimalkan clutter – elemen yang tidak perlu sebaiknya disembunyikan di menu atau menggunakan ikon yang sederhana.
+ ~~ Misalnya, hindari menampilkan terlalu banyak tombol di bar navigasi atas; cukup tombol penting (search, refresh, filter). Layout bottom navigation dapat dipertimbangkan untuk akses cepat ke section utama (Perpustakaan, Explore/Cari, Pengaturan, dsb) sehingga navigasi terasa natural.
+ 
+> Navigasi yang Intuitif:
+ ~~ Strukur navigasi aplikasi dibuat mudah dipahami. Contoh: dari Library (daftar novel) user tap novel -> masuk ke halaman Detail Novel (deskripsi, daftar bab) -> pilih bab -> masuk ke Reader (teks bacaan). Pastikan ada kontrol navigasi yang jelas di tiap layar, seperti tombol Back yang konsisten.
+ ~~ Dalam reader, tap tengah layar bisa memunculkan toolbar (untuk akses menu, bab selanjutnya, dll) dan tap pinggir untuk ganti bab/halaman (untuk mode page-turn). Pengguna Tachiyomi umumnya sudah familiar dengan gesture tersebut, jadi kita adopsi hal serupa.
+ 
+> Konsistensi UI:
+ ~~ Pastikan elemen UI konsisten di seluruh aplikasi. Misal, penggunaan warna aksen, bentuk ikon, tipografi judul, semuanya seragam sesuai tema. Jika user mengaktifkan Dark Mode, semua layar (Library, Detail, Reader, Settings) tampil dengan skema gelap yang konsisten.
+ ~~ Hindari campuran style yang membingungkan (contoh: jangan di satu halaman pakai bottom sheet untuk opsi, di halaman lain pakai dialog modal – pilih satu pendekatan yang konsisten kecuali ada alasan khusus).
+ 
+> Performa UI Halus:
+ ~~ UX yang baik juga berarti animasi dan transisi yang halus (lag-free). Optimalkan recycle view atau list agar scroll tidak patah-patah meski jumlah item banyak (gunakan RecyclerView dengan ViewHolder, atau Compose LazyColumn). Juga, tampilkan placeholder/loading state yang informatif saat data belum siap, alih-alih layar kosong. 
+ ~~ Contoh: saat membuka novel yang datanya masih fetching, tampilkan skeleton UI atau spinner “Memuat bab…”. Feedback visual ini mencegah pengguna merasa aplikasi hang. Setelah data siap, transisi ke konten nyata dengan animasi fade agar smooth.
+ 
+> Aksesibilitas:
+ ~~ Perhatikan aspek aksesibilitas agar aplikasi dapat digunakan oleh seluas mungkin pengguna. Misalnya, pastikan teks cukup kontras dengan latar belakang (terutama dalam Dark Mode pilih warna teks yang tidak terlalu redup). 
+ ~~ Dukung pengubahan ukuran font global Android – jika user set font besar di perangkat, UI kita sebaiknya menyesuaikan (gunakan sp unit di Android). Tambahkan label deskripsi (contentDescription) di ikon-ikon penting untuk screen reader. Dengan langkah-langkah ini, pengguna dengan kebutuhan khusus tetap bisa menikmati aplikasi.
+
+> UI Khusus untuk Kenyamanan Membaca:
+ ~~ Layar pembaca novel (reader view) adalah inti UX. Desainlah sedemikian rupa agar fokus pada teks dan nyaman untuk sesi membaca panjang. Misalnya, buat mode layar penuh yang menyembunyikan status bar/navigation bar saat membaca, sehingga area teks maksimal (Tachiyomi juga punya opsi ini).
+ ~~ Biarkan pengguna mengatur orientasi (portrait/landscape lock) dan pastikan layout adaptif – di landscape bisa pakai kolom ganda atau teks lebih lebar sesuai rasio. Tambahkan kontrol gestur: swipe kiri/kanan ganti bab, swipe atas/bawah atur kecerahan (jika mau), atau pinch untuk adjust font size cepat (bisa dipertimbangkan seperti pembaca PDF). Semua interaksi ini harus responsif.
+ 
+> Personalisasi UI:
+ ~~ Beri ruang untuk personalisasi tampilan sesuai preferensi user, tanpa membingungkan. Contohnya, sediakan menu Settings yang komprehensif namun terorganisir (bisa pakai kategori: Tampilan, Pembaca, Unduhan, Notifikasi, dll). Pengguna lanjutan bisa menggali opsi, sedangkan pengguna awam cukup pakai default.
+ ~~ Dalam hal UI, meskipun banyak opsi, jangan tampilkan semuanya di depan. Hanya tunjukkan kontrol penting di layar utama, sisanya letakkan di Settings. Best practice-nya, default harus sudah optimal sehingga sebagian besar user tak perlu atur macam-macam kecuali mereka mau.
