@@ -1,0 +1,933 @@
+**A. FITUR INTI APLIKASI NOVEL**
+
+1. **Perpustakaan dan Manajemen Novel**
+
+   **a) Koleksi Novel**  
+   Aplikasi Ranobe menyediakan sistem perpustakaan yang komprehensif untuk pengelolaan novel:
+
+   - **Rak Buku Virtual**  
+     Pengguna dapat membuat, menamai, dan mengatur rak sendiri seperti “Sedang Dibaca,” “Favorit,” “Akan Dibaca,” dan “Selesai Dibaca” untuk mengorganisir koleksi mereka dengan efektif.
+
+   - **Drag-and-Drop Organization**  
+     Antarmuka intuitif memungkinkan pengguna menyusun ulang novel antar-rak dengan gestur drag-and-drop sederhana. Novel dapat berada dalam beberapa rak sekaligus untuk fleksibilitas maksimal.
+
+   - **Metadata Lengkap**  
+     Setiap novel menyimpan informasi seperti judul, penulis, ilustrator, genre, tag, sinopsis, cover art, status terjemahan (selesai/ongoing), jumlah bab, dan tanggal pembaruan terakhir.
+
+   - **Tampilan Beragam**  
+     Mode tampilan yang dapat disesuaikan, termasuk grid (fokus pada cover), list (detail lengkap), dan kompak (untuk melihat lebih banyak judul sekaligus).
+
+   - **Pengelolaan Batch**  
+     Fitur untuk memilih banyak novel sekaligus dan melakukan operasi massal seperti memindahkan ke rak baru, menandai status baca, mengunduh, atau menghapus.
+
+   - **Rak Otomatis**  
+     Sistem yang mengkategorikan novel berdasarkan kriteria seperti “Baru Diperbarui,” “Baru Ditambahkan,” atau “Belum Selesai” untuk membantu pengelolaan perpustakaan.
+
+   - **Penyimpanan Lokal**  
+     Perpustakaan disimpan dalam database lokal perangkat untuk kecepatan akses dan ketersediaan offline.
+
+   **b) Filter & Sorting**  
+   Aplikasi mengimplementasikan mekanisme filter dan pengurutan yang canggih:
+
+   - **Filter Multi-Parameter**  
+     Pengguna dapat memfilter koleksi mereka berdasarkan:
+     - **Genre dan Tag**: Filter berdasarkan genre utama dan tag spesifik.
+     - **Status Baca**: Memfilter berdasarkan status (belum dibaca, sedang dibaca, dibaca sebagian, selesai dibaca).
+     - **Status Novel**: Seleksi berdasarkan status publikasi (ongoing, completed, hiatus).
+     - **Penulis/Penerbit**: Fokus pada karya dari penulis atau penerbit tertentu.
+     - **Tanggal**: Filter berdasarkan tanggal ditambahkan ke perpustakaan atau tanggal pembaruan terakhir.
+     - **Jumlah Chapter**: Filter berdasarkan rentang jumlah chapter.
+     - **Status Download**: Memisahkan novel yang sudah diunduh dan tersedia offline.
+
+   - **Sistem Sorting Komprehensif**  
+     - **Sorting Alfabetis**: Berdasarkan judul atau penulis (A–Z/Z–A).
+     - **Sorting Kronologis**: Berdasarkan tanggal ditambahkan, diperbarui, atau dibaca terakhir.
+     - **Sorting Status Baca**: Berdasarkan progres baca (persentase penyelesaian).
+     - **Sorting Custom**: Berdasarkan urutan pengaturan pengguna secara manual.
+
+   - **Filter Preset**  
+     Kemampuan menyimpan konfigurasi filter favorit untuk digunakan kembali dengan cepat.
+
+   - **Filter Quick Access**  
+     Panel filter cepat yang dapat diakses dari mana saja dalam aplikasi untuk mengubah tampilan tanpa harus masuk ke menu pengaturan mendalam.
+
+   - **Filter History**  
+     Melacak riwayat filter yang digunakan untuk mempermudah kembali ke tampilan sebelumnya.
+
+   **c) Pencarian Global**  
+   Fitur pencarian global dalam Ranobe menyediakan kemampuan penelusuran yang kuat:
+
+   - **Unified Search**  
+     Satu kotak pencarian yang mencari di seluruh sumber — perpustakaan lokal dan katalog — dengan hasil yang dikelompokkan berdasarkan sumber.
+
+   - **Real-time Suggestions**  
+     Saran pencarian muncul saat pengguna mengetik, menampilkan judul, penulis, dan kategori yang relevan dengan kueri.
+
+   - **Fuzzy Search**  
+     Toleransi terhadap kesalahan pengetikan dan variasi ejaan, terutama untuk judul non-latin atau terjemahan alternatif.
+
+   - **Advanced Query Syntax**  
+     Dukungan untuk operator pencarian seperti "quotation marks" untuk frasa tepat, wildcard (*) untuk pencocokan sebagian, dan operator Boolean (AND, OR, NOT).
+
+   - **Search Filters**  
+     Filter hasil pencarian dengan kriteria tambahan seperti genre, status, atau panjang.
+
+   - **Search History**  
+     Menyimpan dan menampilkan riwayat pencarian terbaru dengan opsi untuk menghapus atau menggunakan kembali kueri lama.
+
+
+2. **Mode Baca dan Tampilan Bacaan**
+
+   **a) Mode Baca Offline**  
+   Aplikasi Ranobe mengimplementasikan sistem membaca offline yang andal:
+
+   - **Manajemen Unduhan**  
+     Sistem mengunduh dan menyimpan teks novel secara efisien dengan kompresi data yang dioptimalkan untuk menghemat ruang penyimpanan.
+
+   - **Opsi Unduhan**  
+     Pengguna dapat mengunduh seluruh novel, rangkaian bab tertentu, atau hanya bab-bab individual sesuai kebutuhan.
+
+   - **Manajemen Cache**  
+     Sistem menyimpan bab-bab yang sering dibaca dan dapat membersihkan konten lama saat diperlukan untuk menghemat ruang.
+
+   - **Prioritas Unduhan**  
+     Pengguna dapat menetapkan prioritas novel atau bab mana yang diunduh terlebih dahulu dalam antrian.
+
+   - **Background Downloads**  
+     Pengunduhan berjalan di latar belakang dengan notifikasi progress yang informatif.
+
+   - **Pengaturan Unduhan**  
+     Opsi untuk hanya mengunduh saat terhubung ke Wi-Fi, guna menghindari penggunaan data seluler yang berlebihan.
+
+   - **Deteksi Koneksi**  
+     Aplikasi secara otomatis beralih ke konten lokal saat konektivitas buruk atau tidak ada.
+
+   - **Pengaturan Kualitas Gambar**  
+     Untuk novel dengan ilustrasi, sistem menawarkan berbagai tingkat kompresi gambar agar penyimpanan lebih efisien.
+
+   - **Manajemen Lokasi Penyimpanan**  
+     Kemampuan untuk memilih lokasi penyimpanan khusus (internal/eksternal) untuk konten offline.
+
+   **b) Penyesuaian Tampilan**  
+   Ranobe menyediakan pengalaman membaca yang sangat dapat dikustomisasi:
+
+   - **Pengaturan Typography**:
+     - Pilihan font (serif, sans-serif, monospace).
+     - Import font kustom.
+     - Ukuran teks (8pt–48pt).
+     - Ketebalan font (light hingga bold).
+     - Jarak baris, jarak karakter, jarak paragraf.
+     - Perataan teks (kiri, kanan, tengah, justify).
+
+   - **Opsi Warna & Tema**:
+     - Tema bawaan (terang, gelap, sepia).
+     - Tekstur latar (seperti kertas, perkamen).
+     - Warna kustom untuk teks dan latar belakang.
+     - Kontrol kontras.
+     - Perubahan tema otomatis berdasarkan waktu.
+
+   - **Konfigurasi Layout**:
+     - Margin (kiri, kanan, atas, bawah) yang dapat diatur.
+     - Batas lebar teks pada layar lebar.
+     - Mode paginasi (scroll vertikal kontinu atau per halaman horizontal).
+     - Tampilan dua halaman saat tablet dalam mode landscape.
+     - Indentasi paragraf.
+     - Jeda antarbab yang dapat dikustomisasi.
+
+   - **Kenyamanan Membaca**:
+     - Filter cahaya biru untuk mengurangi kelelahan mata.
+     - Kontrol animasi pergantian halaman (none, fade, slide, curl).
+     - Kunci orientasi layar independen dari sistem.
+     - Navigasi tombol volume untuk berganti halaman.
+     - Zona tap yang dapat dikonfigurasi untuk navigasi.
+
+   - **Pengaturan Profil**:
+     - Profil Tampilan: menyimpan dan mengaktifkan profil pengaturan berbeda.
+     - Export/Import Setting: mencadangkan konfigurasi tampilan.
+
+   **c) Tampilan Adaptif**  
+   Ranobe memiliki desain responsif yang menyesuaikan dengan berbagai kondisi:
+
+   - **Layout Responsif**  
+     Antarmuka menyesuaikan otomatis dengan ukuran layar (smartphone kecil hingga tablet besar).
+
+   - **Adaptasi Orientasi**  
+     Transisi mulus antara portrait dan landscape dengan reorganisasi konten.
+
+   - **Dynamic Typography**  
+     Ukuran teks dan margin menyesuaikan dengan dimensi layar.
+
+   - **Cutout Awareness**  
+     Tampilan mengakomodasi notch, punch-hole, atau cutout layar pada perangkat modern.
+
+   - **Split Screen Support**  
+     Dukungan untuk mode split-screen Android dengan tata letak yang tetap nyaman.
+
+   - **Full-Immersion Mode**  
+     Mode layar penuh yang menyembunyikan status bar, navigation bar, dan elemen UI lain.
+
+   - **Adaptasi Lingkungan**:
+     - Light Sensing: menyesuaikan kecerahan dan kontras dengan lingkungan.
+     - Dark Mode Sync: sinkron dengan pengaturan dark mode sistem.
+     - Time-Based Themes: perubahan tampilan otomatis berdasarkan waktu.
+
+   - **UI Scaling**  
+     Opsi penyesuaian ukuran elemen UI terpisah dari ukuran teks.
+
+
+3. **Bookmark dan Riwayat Bacaan**
+
+   **a) Bookmark**  
+   Ranobe menyediakan sistem bookmark yang komprehensif:
+
+   - **Multi-level Bookmarking**  
+     Kemampuan menandai novel, bab tertentu, paragraf spesifik, atau kalimat individual.
+
+   - **Bookmark Categories**  
+     Kategori bookmark dengan label kustom dan kode warna.
+
+   - **Bookmark Notes**  
+     Menambahkan catatan pendek ke bookmark untuk konteks.
+
+   - **Visual Indicators**  
+     Indikator visual pada scrollbar atau progress bar untuk posisi bookmark.
+
+   - **Bookmark Sorting**  
+     Mengurutkan bookmark berdasar waktu pembuatan atau posisi novel.
+
+   - **Content Preview**  
+     Preview isi bookmark saat dipilih dari daftar.
+
+   - **Local Storage**  
+     Bookmark disimpan lokal untuk akses cepat.
+
+   - **Collections**  
+     Pengelompokan bookmark menjadi koleksi (misal referensi atau kutipan favorit).
+
+   - **Auto-Bookmarks**  
+     Penandaan otomatis posisi terakhir baca di setiap novel.
+
+   - **Import/Export**  
+     Ekspor dan impor bookmark untuk memudahkan transfer atau backup.
+
+   **b) Riwayat Bacaan**  
+   Sistem riwayat bacaan yang mendetail:
+
+   - **Position Tracking**  
+     Pelacakan posisi baca akurat sampai level paragraf.
+
+   - **Reading Sessions**  
+     Informasi tentang sesi baca (waktu mulai, durasi, jumlah halaman dibaca).
+
+   - **Chapter Completion**  
+     Status penyelesaian per bab dengan visual progres.
+
+   - **Recent Novels Access**  
+     Panel cepat novel yang baru dibaca dengan info posisi terakhir.
+
+   - **Time Estimates**  
+     Perkiraan waktu menyelesaikan novel atau bab berdasar kecepatan baca.
+
+   - **Reading Goals**  
+     Penetapan dan pelacakan tujuan membaca (bab per hari, novel per bulan).
+
+   - **History Search**  
+     Pencarian riwayat bacaan berdasar judul atau tanggal.
+
+
+4. **Navigasi Antar Bab dan Novel**
+
+   **a) Navigasi Swipe atau Klik**  
+   Ranobe menyediakan navigasi multi-modal yang intuitif:
+
+   - **Gesture Navigation**:
+     - Horizontal Swipe: geser kiri/kanan untuk halaman dalam mode pagination.
+     - Vertical Swipe: scroll halus dalam mode scrolling.
+     - Edge Swipes: geser dari tepi untuk navigasi cepat atau akses menu.
+
+   - **Tap-Based Navigation**:
+     - Edge Tap Zones: area konfigurable di sisi layar untuk tap navigasi.
+     - Center Tap: tap tengah untuk menampilkan/menghilangkan UI overlay.
+     - Double-Tap: zoom atau navigasi cepat.
+
+   - **Hardware Integration**:
+     - Volume Buttons: menggunakan tombol volume untuk berpindah halaman.
+     - Physical Keyboard: dukungan navigasi keyboard pada perangkat dengan keyboard fisik.
+
+   - **Navigation Controls**:
+     - Floating Controls: panel kontrol melayang untuk alternatif navigasi.
+     - Chapter Jump: tombol loncat ke bab berikut/sebelum.
+     - Page Jump: slider untuk melompat ke bagian tertentu dalam bab.
+
+   - **Advanced Features**:
+     - Auto-scroll: navigasi otomatis dengan kecepatan yang dapat diatur.
+     - Location Memory: mengingat beberapa posisi dalam novel.
+     - Return Navigation: kembali ke posisi sebelumnya.
+     - Navigation History: riwayat lokasi yang pernah dikunjungi.
+     - Gesture Settings: panel konfigurasi gerakan navigasi.
+
+   - **Visual Aids**:
+     - Progress Minimap: miniatur novel yang menunjukkan posisi saat ini.
+     - Scroll Indicators: indikator visual saat mendekati awal/akhir.
+     - Transition Effects: animasi halus antar halaman yang dapat dikonfigurasi.
+
+   **b) Daftar Isi Interaktif**  
+   Daftar isi yang kaya fitur dan mudah dinavigasi:
+
+   - **Multi-Level Structure**  
+     Mendukung novel dengan struktur kompleks (bagian, bab, sub-bab).
+
+   - **Visual Organization**:
+     - Expandable View: daftar isi yang bisa diperluas/diciutkan.
+     - Visual Indentation: indentasi untuk menandakan level hierarki.
+     - Chapter Thumbnails: gambar mini bab dengan ilustrasi.
+     - Read Status: penanda status baca tiap entri.
+
+   - **Interactive Features**:
+     - TOC Search: pencarian cepat di daftar isi untuk novel panjang.
+     - Instant Navigation: satu ketukan untuk langsung ke bagian tertentu.
+     - Content Preview: preview isi saat menekan dan menahan entri.
+     - Last Position Marker: indikator posisi terakhir dibaca.
+
+   - **Organization Tools**:
+     - Collapsible Sections: kemampuan menciutkan bagian untuk fokus.
+     - Bookmark Indicators: penanda bookmark dalam daftar isi.
+     - Status Icons: ikon status bab (dibaca, belum, diunduh).
+
+   - **Advanced Features**:
+     - Floating TOC: daftar isi yang dapat diakses dari tepi layar.
+     - Display Options: sembunyikan/tampilkan bagian tertentu.
+     - Chapter Length: informasi panjang bab.
+     - Reading Estimates: perkiraan waktu untuk menyelesaikan tiap bab.
+
+
+**B. FITUR PENEMUAN & REKOMENDASI KONTEN**
+
+5. **Katalog Novel dan Konten Eksternal**
+
+   **a) Integrasi Sumber Konten**  
+   Ranobe memiliki sistem plugin untuk mengakses berbagai sumber novel:
+
+   - **Plugin Framework**:
+     - Standard API: API terstandardisasi untuk plugin.
+     - Security Isolation: isolasi keamanan plugin.
+     - Credential Management: pengelolaan login jika diperlukan.
+     - Request Limiting: mencegah overloading server.
+     - Error Handling: penanganan kesalahan dengan fallback.
+
+   - **Plugin Management**:
+     - Plugin Directory: katalog untuk instal sumber novel.
+     - Update System: pembaruan plugin.
+     - Source Settings: pengaturan preferensi bahasa dan filter.
+     - Status Monitoring: memantau ketersediaan dan performa sumber.
+
+   - **Content Sources**:
+     - Web Novel Sites: dukungan situs web novel populer.
+     - Official APIs: integrasi dengan API resmi jika tersedia.
+     - Community Sources: akses ke situs terjemahan komunitas.
+     - Local Import: impor format EPUB, PDF, TXT.
+     - Personal Library: koleksi dari storage lokal.
+
+   - **Source Features**:
+     - Language Support: berbagai bahasa.
+     - Source-specific Settings: pengaturan khusus per sumber.
+     - Content Filters: filter konten berdasar genre atau kriteria lain.
+     - Cross-source Search: pencarian di beberapa sumber sekaligus.
+
+   **b) Dynamic Tag Cloud & Kategori**  
+   Sistem kategorisasi yang menyesuaikan preferensi pengguna:
+
+   - **Tag System**:
+     - Metadata Tagging: penandaan berdasar metadata.
+     - Custom Tags: pengguna dapat menambah tag kustom.
+     - Related Tags: menampilkan tag yang saling terkait.
+     - Tag Structure: pengelompokan tag terstruktur.
+
+   - **Tag Features**:
+     - Tag Filtering: filter perpustakaan berdasarkan tag.
+     - Tag Navigation: jelajahi konten lewat sistem tag.
+     - Tag Statistics: preferensi tag personal.
+     - Contextual Tags: tag muncul sesuai konteks browsing.
+
+
+6. **Rekomendasi Novel**
+
+   **a) Algoritma Rekomendasi**  
+   Sistem rekomendasi berbasis pola penggunaan:
+
+   - **Recommendation Engine**:
+     - Genre Matching: saran novel sejenis genre kesukaan.
+     - Series Completion: saran untuk melengkapi seri terbaca.
+     - Similar Content: rekomendasi novel mirip favorit pengguna.
+
+   - **Personalization Features**:
+     - Preference Learning: sistem mempelajari kesukaan dari aktivitas baca.
+     - Exploration Mode: menemukan novel di luar zona nyaman.
+
+   - **Recommendation Presentation**:
+     - Visual Recommendations: tampilan novel yang direkomendasikan.
+     - Reason Indicators: alasan kenapa novel tertentu direkomendasikan.
+     - Preview Cards: kartu sinopsis singkat dan metadata.
+     - Quick Actions: aksi cepat (Tambah ke Perpustakaan/Baca Sekarang).
+
+   **b) Dashboard Statistik**  
+   Aplikasi menyajikan dashboard data yang informatif:
+
+   - **Reading Statistics**:
+     - Daily/Weekly/Monthly Stats: statistik bacaan dengan grafik.
+     - Recent Activity: “Novel Terbaca Hari Ini” dan aktivitas terbaru.
+     - Popular Content: “Trending Novel” berdasarkan popularitas.
+
+   - **Personal Analytics**:
+     - Genre Distribution: analisis preferensi genre.
+     - Reading Time: tracking waktu baca dengan visualisasi.
+     - Milestone Tracker: pencapaian jumlah novel/bab dibaca.
+
+   - **Progress Tracking**:
+     - Completion Estimates: proyeksi penyelesaian novel berdasar kecepatan.
+     - Reading Summary: ringkasan mingguan/bulanan aktivitas membaca.
+
+   - **Dashboard Customization**:
+     - Widget Selection: pilih metrik untuk ditampilkan.
+     - Layout Options: atur tata letak dashboard.
+     - Theme Integration: menyesuaikan tema aplikasi.
+     - Focus Mode: menyoroti statistik tertentu saja.
+
+
+**C. FITUR-FITUR BARU (ADVANCED & INOVATIF)**
+
+7. **Cloud Synchronization (Google Drive) & Multi-Perangkat**
+
+   **a) Sinkronisasi Progres Bacaan**  
+   Aplikasi mendukung sinkronisasi antar-perangkat:
+
+   - **Sync Mechanism**:
+     - Position Sync: sinkron posisi baca akurat.
+     - Differential Updates: hanya mentransfer perubahan.
+     - Conflict Resolution: penanganan konflik perubahan simultan.
+     - Manual Sync Option: sinkronisasi manual saat jaringan terbatas.
+
+   - **Sync Settings**:
+     - Sync Schedule: jadwal sinkron otomatis.
+     - Sync Scope: kontrol item yang disinkron (posisi, bookmark, setting).
+     - Network Conditions: pengaturan sinkron berdasarkan jaringan.
+     - Background Sync: berjalan di latar belakang tanpa mengganggu.
+
+   - **Sync Status**:
+     - Visual Indicators: indikator status sinkronisasi.
+     - Sync History: riwayat sinkronisasi.
+     - Error Reporting: laporan kegagalan dan alasannya.
+     - Manual Verification: opsi cek status sinkron secara manual.
+
+   **b) Backup Data**  
+   Sistem backup untuk keamanan data:
+
+   - **Backup System**:
+     - Scheduled Backups: backup otomatis terjadwal.
+     - Google Drive Integration: penyimpanan backup di Google Drive.
+     - Local Backup: opsi backup ke penyimpanan lokal.
+     - Incremental Backups: menyimpan hanya perubahan.
+
+   - **Backup Management**:
+     - Backup Versioning: menyimpan beberapa versi backup.
+     - Backup Encryption: opsi enkripsi backup dengan password.
+     - Backup Size Control: pengaturan kontrol ukuran backup.
+     - Storage Monitoring: pemantauan ruang backup.
+
+   - **Restore Features**:
+     - Selective Restore: pemulihan komponen tertentu.
+     - Backup Preview: tinjau isi backup sebelum restore.
+     - Cross-device Restore: memulihkan data di perangkat lain.
+     - Restore Verification: validasi keberhasilan pemulihan.
+
+
+8. **Text-to-Speech (TTS) Mode**
+
+   **a) Pembacaan Otomatis**  
+   Fitur TTS untuk pengalaman mendengarkan:
+
+   - **TTS Engine**:
+     - High-quality Voices: suara berkualitas tinggi dari sistem.
+     - Language Detection: deteksi bahasa otomatis.
+     - Text Processing: praproses teks agar pembacaan lebih natural.
+     - Chapter Navigation: pengaturan pembacaan per bab.
+
+   - **Playback Control**:
+     - Basic Controls: play, pause, skip.
+     - Background Playback: tetap berjalan saat layar mati.
+     - Sleep Timer: timer tidur dengan fade-out.
+     - Auto-scroll Text: teks bergulir mengikuti audio.
+     - Text Highlighting: sorotan kata yang sedang dibaca.
+
+   - **Integration Features**:
+     - Media Control: integrasi dengan kontrol media perangkat.
+     - Chapter Queueing: antrean bab untuk didengarkan berurutan.
+     - Position Memory: menyimpan posisi terakhir audio.
+     - Media Session: tampil di notifikasi dan kontrol headset.
+     - Bookmark Integration: bookmark posisi audio.
+     - Reading History: pencatatan bacaan audio di riwayat.
+
+   **b) Pengaturan Suara**  
+   Kontrol untuk pengalaman audio optimal:
+
+   - **Voice Settings**:
+     - Voice Selection: pilihan suara (pria, wanita, anak) jika tersedia.
+     - Speed Control: kecepatan bacaan (0.5x–3.0x).
+     - Pitch Adjustment: pengaturan nada suara.
+     - Volume Normalization: penyesuaian volume otomatis.
+
+   - **Pronunciation Control**:
+     - Pause Settings: jeda antar paragraf, kalimat, tanda baca.
+     - Custom Dictionary: menentukan cara pengucapan kata tertentu.
+     - Emphasis Control: penekanan pada kata/frasa tertentu.
+
+   - **Preset Management**:
+     - Voice Presets: simpan berbagai kombinasi pengaturan.
+     - Quick Switch: alih cepat antar-preset.
+	 
+
+9. **Pencarian Teks Mendalam**
+
+   **a) Fitur Pencarian dalam Novel**  
+   Pencarian full-text yang komprehensif:
+
+   - **Search Capabilities**:
+     - Full-text Search: di seluruh konten novel yang diunduh.
+     - Regular Expression: pencarian pola teks kompleks.
+     - Contextual Search: di bab saat ini atau seluruh novel.
+     - Multi-term Search: beberapa kata/frasa sekaligus.
+
+   - **Search Options**:
+     - Case Sensitivity: sensitif/tidaknya huruf besar-kecil.
+     - Whole Word: pencarian kata utuh vs parsial.
+     - Search Scope: batasan (judul, konten, metadata).
+     - Search History: riwayat pencarian dan penggunaan ulang.
+
+   - **Result Management**:
+     - Result Navigation: pindah antar-hasil pencarian.
+     - Context Preview: menampilkan teks sekitar hasil.
+     - Result Count: jumlah total hasil ditemukan.
+     - Export Results: menyimpan hasil pencarian.
+
+   **b) Highlight Hasil Pencarian**  
+   Visualisasi hasil pencarian yang efektif:
+
+   - **Highlight Features**:
+     - Color Highlighting: sorotan berwarna pada teks hasil.
+     - Result Minimap: indikator posisi hasil di sidebar/scrollbar.
+     - Context Window: preview teks sebelum/sesudah hasil.
+     - Navigation Controls: tombol next/previous hasil.
+
+   - **Visual Enhancement**:
+     - Multi-term Highlighting: warna berbeda untuk tiap istilah.
+     - Highlight Persistence: mempertahankan highlight saat navigasi.
+     - Zoom to Context: fokus otomatis ke area hasil.
+
+   - **Interaction Options**:
+     - Tap Interaction: aksi saat mengetuk highlight.
+     - Convert to Bookmark: jadikan hasil pencarian sebagai bookmark.
+     - Add Notes: menambahkan catatan pada hasil penting.
+     - Copy Context: menyalin teks berikut konteks.
+
+
+10. **Notifikasi Cerdas dan Pembaruan Konten**
+
+   **a) Pemberitahuan Update**  
+   Sistem notifikasi yang dapat dikustomisasi:
+
+   - **Update Notifications**:
+     - New Chapter Alerts: notifikasi real-time untuk bab baru novel yang diikuti.
+     - Bundled Notifications: pengelompokan update dari sumber sama.
+     - Content Preview: sinopsis singkat bab baru langsung dari notifikasi.
+     - Direct Navigation: tautan langsung ke konten baru.
+
+   - **Notification Management**:
+     - Priority Levels: beda prioritas untuk tiap novel.
+     - Silent Updates: update tanpa notifikasi untuk novel prioritas rendah.
+
+   - **Status Indicators**:
+     - Badge Counter: jumlah update pada ikon aplikasi.
+     - Update Timeline: kronologis pembaruan terbaru.
+
+11. **Bookmark Interaktif, Highlight, & Catatan**
+
+   **a) Highlight Teks**  
+   Sistem highlight yang kaya fitur:
+
+   - **Highlighting Tools**:
+     - Color Selection: pilihan warna highlight.
+     - Highlight Categories: label/kategori highlight.
+     - Highlight Styles: gaya (solid, underline, wavy).
+     - Selection Tools: alat seleksi teks presisi.
+
+   - **Highlight Management**:
+     - All Highlights View: daftar semua highlight di novel.
+     - Color Filtering: filter berdasar warna/kategori.
+     - Batch Operations: edit/hapus beberapa highlight sekaligus.
+
+   - **Interaction Features**:
+     - Tap Actions: aksi saat menekan highlight.
+     - Annotation Link: tautkan highlight ke catatan.
+     - Quick Actions: menu popup saat membuat highlight.
+
+
+**D. FITUR PENDUKUNG PENGALAMAN PENGGUNA (UX/UI)**
+
+12. **Antarmuka Pengguna (UI) yang Modern dan Intuitif**
+
+   **a) Navigasi Lengkap**  
+   Sistem navigasi yang efisien dan mudah:
+
+   - **Bottom Navigation**:
+     - Core Sections: tab untuk Home, Library, Explore, Settings.
+     - State Preservation: posisi dan status tiap tab terjaga.
+     - Visual Indicators: penanda tab aktif dan notifikasi.
+     - Customizable Tabs: urutan/isi tab bisa diatur.
+
+   - **Navigation Patterns**:
+     - Gesture Support: navigasi dengan swipe.
+     - Back Stack Management: riwayat navigasi intuitif.
+     - Deep Linking: langsung ke bagian spesifik dari notifikasi.
+     - Transition Animation: animasi halus antar-halaman.
+
+   - **Navigation Aids**:
+     - Search Integration: akses cepat ke pencarian global.
+     - Recent Items: akses cepat konten terbaru.
+     - Navigation Drawer: menu fungsi sekunder.
+     - Quick Actions: tombol aksi mengambang untuk fungsi utama.
+
+   **b) Halaman Beranda Dinamis**  
+   Beranda yang informatif dan personal:
+
+   - **Content Sections**:
+     - Continue Reading: melanjutkan novel yang sedang dibaca.
+     - New Updates: novel yang baru diperbarui.
+     - Recommendations: rekomendasi berdasar preferensi.
+     - Recently Added: novel yang baru dimasukkan ke perpustakaan.
+
+   - **Visual Elements**:
+     - Featured Banners: banner besar konten unggulan.
+     - Cover Art Display: tampilan cover beresolusi tinggi tetapi terkompress.
+     - Progress Indicators: indikator progres baca.
+     - Status Badges: penanda status (baru, updated, selesai).
+
+   - **Customization**:
+     - Section Reordering: susun ulang bagian beranda.
+     - Hide/Show Sections: sembunyikan bagian tertentu.
+     - Display Preferences: atur tampilan kartu atau daftar.
+     - Content Filters: filter konten apa saja yang muncul.
+
+   **c) Desain Responsif**  
+   Desain adaptif untuk berbagai perangkat:
+
+   - **Screen Adaptation**:
+     - Size Responsiveness: tampilan menyesuaikan ukuran layar.
+     - Orientation Support: mendukung portrait dan landscape.
+     - Density Scaling: menyesuaikan densitas piksel beragam.
+     - Multi-window Support: tetap fungsional di mode split-screen.
+
+   - **Accessibility Design**:
+     - Readable Typography: font dan ukuran teks ramah baca.
+     - Color Contrast: kontras warna sesuai standar aksesibilitas.
+     - Touch Target Sizing: area sentuh cukup besar.
+     - Screen Reader Support: kompatibel dengan pembaca layar.
+
+   - **UI Consistency**:
+     - Design System: elemen UI konsisten di seluruh aplikasi.
+     - Theme Coherence: keselarasan tema di semua halaman.
+     - Interaction Patterns: pola interaksi yang familiar.
+     - Visual Hierarchy: hierarki visual jelas untuk navigasi.
+
+   **d) Implementasi Halaman Spesifik**
+
+   1. **Halaman Home (Beranda)**  
+      - **Header Elements**: Search Bar, Notification Icon, User Profile.  
+      - **Content Carousel**: banner rekomendasi, cover highlight, quick actions.  
+      - **Content Lists**: Novel Terpopuler, Novel Terbaru, Continue Reading, Novel by Genre.  
+      - **Discovery Tools**: kategori cepat, filter bar, personalisasi konten.
+
+   2. **Halaman Library (Perpustakaan)**  
+      - **Organization Features**: collection tabs (Reading, Favorites, Completed), grid/list toggle, sort controls, filter panel.  
+      - **Book Status Display**: progress bars, update badges, last read time, chapter count.  
+      - **Management Tools**: multi-select, batch actions, search library, category management.
+
+   3. **Halaman Menu & Navigasi Genre**  
+      - **Genre Browser**: grid kategori, sub-kategori, tag populer, recent searches.  
+      - **Content Display**: genre banners, novel previews, filter options, sort controls.  
+      - **Navigation Aids**: breadcrumb navigation, related genres, back to categories, save favorites.
+
+   4. **Novel Reading Screen**  
+      - **Reading Interface**: tampilan bersih, margin adjustable, theme selection, font controls.  
+      - **Navigation Elements**: progress bar, reading time estimate, chapter navigation, page counter.  
+      - **Reading Modes**: vertical scroll, horizontal page, full screen, night mode.  
+      - **Reading Enhancements**: line spacing, text alignment, screen orientation lock, reading flow options.
+
+   5. **Novel Detail Page**  
+      - **Header Information**: cover display, title & author, rating, status badge.  
+      - **Description Section**: sinopsis, metadata (genre, tag, rilis), statistik (jumlah bab, estimasi waktu baca).  
+      - **Chapter Management**: daftar bab, urutan (terlama/terbaru), batch download, pencarian bab.  
+      - **Action Buttons**: continue reading, start reading, add to library, download all.  
+      - **Reading Stats**: reading progress, last read, total time, completion status.
+
+
+13. **Profil Pengguna dan Personalisasi**
+
+   **a) Pengaturan Profil**  
+   Manajemen profil dan preferensi:
+
+   - **Profile Settings**:
+     - User Information: info dasar.
+     - App Preferences: preferensi penggunaan.
+     - Reading Preferences: terkait pengalaman membaca.
+     - Device Settings: pengaturan khusus perangkat.
+
+   - **Interface Customization**:
+     - Theme Selection: pilih tema aplikasi.
+     - Layout Options: atur tata letak UI.
+     - Control Placement: posisi kontrol navigasi.
+     - Language Settings: bahasa aplikasi.
+
+   - **Reading Preferences**:
+     - Default View Mode: mode tampilan baca default.
+     - Auto-scroll Settings: pengaturan auto-scroll.
+     - Text Preferences: preferensi teks default.
+     - Navigation Options: preferensi navigasi dalam novel.
+
+   - **Content Preferences**:
+     - Genre Preferences: daftar genre favorit.
+     - Content Filters: filter konten.
+     - Source Priorities: prioritas sumber novel.
+     - Update Frequency: frekuensi pengecekan update.
+
+   **b) Analitik Bacaan**  
+   Statistik dan wawasan kebiasaan membaca:
+
+   - **Reading Metrics**:
+     - Time Tracking: durasi yang dihabiskan untuk membaca.
+     - Pages/Chapters Read: jumlah halaman/bab total.
+     - Completion Rate: tingkat penyelesaian novel.
+
+   - **Reading Habits**:
+     - Daily Patterns: pola waktu baca harian.
+     - Session Length: rata-rata durasi sesi.
+     - Preferred Genres: genre paling sering dibaca.
+
+   - **Progress Visualization**:
+     - Progress Charts: grafik perkembangan bacaan.
+     - Goal Tracking: pelacakan target membaca.
+
+   - **Content Analysis**:
+     - Genre Distribution: sebaran genre terbaca.
+     - Author Statistics: penulis yang paling banyak dibaca.
+     - Length Preferences: preferensi panjang novel/bab.
+
+
+14. **Widget dan Fitur Cepat Akses**
+
+   **a) Widget “Lanjutkan Bacaan”**  
+   Widget di homescreen untuk akses cepat:
+
+   - **Widget Design**:
+     - Cover Display: cover novel yang sedang dibaca.
+     - Progress Information: info progres baca.
+     - Quick Resume: tombol untuk lanjutkan membaca.
+     - Multiple Size Options: pilihan ukuran widget.
+
+   - **Widget Features**:
+     - Multiple Novel Support: menampilkan beberapa bacaan berjalan.
+     - Reading Stats: info singkat statistik bacaan.
+     - Update Indicators: penanda update baru.
+     - Auto Refresh: penyegaran otomatis.
+
+   - **Interaction Options**:
+     - Direct Launch: langsung ke posisi terakhir baca.
+     - Novel Switch: beralih antar-novel aktif.
+     - Quick Actions: tandai selesai atau bookmark dari widget.
+     - Widget Configuration: atur tampilan dan fungsi.
+
+   **b) Integrasi Notifikasi**  
+   Terhubung dengan sistem notifikasi perangkat:
+
+   - **Notification Widgets**:
+     - Update Counter: badge update pada ikon aplikasi.
+     - Quick Glance Widget: widget yang menampilkan update terkini.
+     - Chapter Preview: preview bab baru di notifikasi.
+     - Action Notifications: tombol aksi langsung di notifikasi.
+
+   - **Notification Features**:
+     - Priority System: sistem prioritas untuk notifikasi.
+     - Bundled Updates: pengelompokan update.
+     - Silent Notifications: update rutin tanpa suara.
+     - Critical Alerts: notifikasi penting yang tidak bisa diabaikan.
+
+
+**E. FITUR MANAJEMEN UNDUHAN DAN KONTEN**
+
+15. **Download Manager dan Prefetching Konten**
+
+   **a) Manajemen Unduhan**  
+   Sistem pengunduhan yang efisien:
+
+   - **Download Queue**:
+     - Priority Management: atur prioritas unduhan.
+     - Batch Operations: operasi massal untuk beberapa unduhan.
+     - Progress Tracking: lacak progres secara detail.
+     - Download History: riwayat unduhan dan statusnya.
+
+   - **Download Controls**:
+     - Pause/Resume: jeda atau lanjutkan.
+     - Cancel Option: batalkan unduhan tengah berlangsung.
+     - Retry Mechanism: percobaan ulang otomatis jika gagal.
+
+   - **Storage Management**:
+     - Space Monitoring: pantau sisa ruang penyimpanan.
+     - Storage Location: pilih lokasi (internal/eksternal).
+     - Cleanup Tools: alat untuk hapus konten tak terpakai.
+
+   - **Network Awareness**:
+     - Network Type Detection: deteksi WiFi atau seluler.
+     - Offline Queueing: antri unduhan untuk dijalankan saat online.
+     - Background Processing: unduhan di latar belakang.
+
+   **b) Prefetching Konten**  
+   Sistem unduhan konten proaktif:
+
+   - **Intelligent Prefetching**:
+     - Next Chapter Prefetch: otomatis unduh bab berikutnya.
+     - Reading Pattern Analysis: analisis pola untuk prefetch cerdas.
+     - Series Prefetch: prefetch untuk seri yang aktif dibaca.
+
+   - **Prefetch Settings**:
+     - Prefetch Range: atur jumlah bab yang di-prefetch.
+     - Network Conditions: atur kondisi jaringan untuk prefetch.
+     - Storage Limits: batas penyimpanan untuk konten prefetch.
+     - Time-based Prefetch: jadwal prefetch (misal, malam hari).
+
+   - **Resource Optimization**:
+     - Compression Options: kompresi data untuk menghemat ruang.
+     - Quality Settings: kualitas gambar diatur untuk penghematan.
+     - Cache Management: pengelolaan cache prefetch yang efisien.
+     - Content Expiry: kebijakan kedaluwarsa konten prefetch.
+
+   - **User Experience Integration**:
+     - Seamless Transitions: perpindahan mulus ke konten prefetch.
+     - Loading Indicators: indikator minimal saat berpindah ke konten.
+     - Prefetch Status: info status prefetch yang tidak mengganggu.
+     - Manual Override: memaksa atau menonaktifkan prefetch.
+
+
+16. **Modularisasi Sumber Konten (Plugin System)**
+
+   **a) Ekstensi Sumber Novel**  
+   Framework plugin untuk berbagai sumber:
+
+   - **Plugin Architecture**:
+     - API Standardization: API standar untuk pengembangan plugin.
+     - Sandbox Execution: eksekusi plugin terisolasi.
+     - Resource Management: pengelolaan sumber daya efisien.
+     - Version Compatibility: kompatibilitas versi plugin dan aplikasi.
+
+   - **Plugin Management**:
+     - Installation Interface: antarmuka instal & kelola plugin.
+     - Enable/Disable Controls: aktif/nonaktif plugin.
+     - Plugin Settings: pengaturan khusus tiap plugin.
+     - Plugin Health Monitoring: pantau kesehatan & performa plugin.
+
+   - **Source Integration**:
+     - Content Discovery: mekanisme penemuan konten.
+     - Metadata Extraction: ekstraksi metadata standar.
+     - Content Formatting: standardisasi format konten beragam.
+     - Authentication Handling: penanganan autentikasi jika perlu.
+
+   **b) Update Ekstensi Mandiri**  
+   Pembaruan plugin secara independen:
+
+   - **Update Framework**:
+     - Independent Updates: plugin bisa di-update tanpa update aplikasi.
+     - Update Notification: notifikasi ketersediaan update plugin.
+     - Version Tracking: pantau versi plugin terpasang.
+     - Changelog Access: catatan perubahan tiap update.
+
+   - **Distribution System**:
+     - Plugin Repository: repositori terpusat plugin.
+     - Direct Installation: instalasi dari sumber eksternal.
+     - Update Channels: stable, beta, nightly.
+     - Signature Verification: verifikasi keamanan plugin.
+
+   - **Update Management**:
+     - Auto-update Options: pengaturan update otomatis plugin.
+     - Selective Updates: pembaruan plugin tertentu saja.
+     - Rollback Capability: kembali ke versi lama jika masalah.
+     - Update Scheduling: jadwal waktu pembaruan.
+
+   - **Plugin Health**:
+     - Compatibility Checking: cek kompatibilitas sebelum update.
+     - Error Reporting: pelaporan kesalahan ke pengembang plugin.
+     - Performance Monitoring: pantau kinerja plugin.
+     - Resource Usage: pelacakan pemakaian sumber daya.
+     - Troubleshooting Tools: alat diagnosa masalah plugin.
+     - Health Reports: laporan kesehatan rutin plugin.
+
+
+---
+
+**RINGKASAN ALUR PROSES PENGALAMAN PENGGUNA (USER FLOW)**
+
+1. **Onboarding dan Pengenalan Aplikasi**  
+   - Instalasi, splash screen, tutorial singkat.  
+   - Pengaturan awal (tema, preferensi genre).  
+   - Panduan antarmuka beranda dan tips kontekstual.
+
+2. **Penemuan dan Eksplorasi Konten**  
+   - Menjelajah katalog atau genre; memfilter dan menyortir.  
+   - Pencarian judul/spesifik kata kunci.  
+   - Melihat detail novel (sinopsis, metadata, daftar bab).  
+   - Tambah ke perpustakaan atau baca langsung.
+
+3. **Manajemen Perpustakaan**  
+   - Menambahkan novel ke rak (Akan Dibaca, Favorit, dsb.).  
+   - Pengorganisasian koleksi (drag-and-drop, multi-rak).  
+   - Filter & sort koleksi.  
+   - Batch management: pindah, unduh, hapus beberapa novel.
+
+4. **Pengalaman Membaca**  
+   - Mulai sesi baca: “Lanjutkan” atau pilih bab.  
+   - Kustomisasi tampilan (font, tema, margin).  
+   - Navigasi dalam bab (swipe/scroll, slider, daftar isi).  
+   - Highlight, bookmark, catatan.  
+   - Posisi terakhir tersimpan otomatis.
+
+5. **Unduhan dan Akses Offline**  
+   - Mengunduh novel/bab tertentu.  
+   - Monitoring unduhan (progress, pause/resume).  
+   - Baca offline tanpa koneksi.  
+   - Sinkronisasi otomatis saat online.
+
+6. **Fitur Canggih dan Interaksi Mendalam**  
+   - Text-to-Speech (TTS) untuk mendengarkan novel.  
+   - Cloud Sync (Google Drive) untuk progres dan pengaturan.  
+   - Pencarian mendalam dalam teks.  
+   - Highlight & catatan lanjutan.
+
+7. **Notifikasi dan Update**  
+   - Notifikasi bab baru, preview konten, quick action.  
+   - Pengaturan notifikasi (tipe, frekuensi, prioritas).  
+   - Widget homescreen untuk melanjutkan bacaan.
+
+8. **Personalisasi dan Pengaturan**  
+   - Profil pengguna, preferensi UI/UX.  
+   - Analitik bacaan dan laporan kebiasaan.  
+   - Manajemen plugin sumber konten.  
+   - Backup & restore data.
+
+9. **Alur Lengkap Pengguna Jangka Panjang**  
+   - Pengguna baru: instal, eksplorasi, tambah novel.  
+   - Eksplorasi lebih lanjut: temukan genre/penulis favorit.  
+   - Koleksi berkembang: atur rak, status baca.  
+   - Rutinitas: notifikasi dan fitur “continue reading”.  
+   - Kustomisasi mendalam: tampilan, TTS, catatan.  
+   - Multi-device: sinkronisasi lancar.  
+   - Manajemen konten: unduh, hapus, update.  
+   - Engagement berkelanjutan: konten baru, rekomendasi, fitur bertambah.
+
+Alur ini dirancang agar pengguna, baik baru maupun berpengalaman, dapat menikmati beragam fitur Ranobe—mulai dari manajemen perpustakaan hingga sinkronisasi cloud dan fitur canggih lain—dalam satu ekosistem aplikasi yang intuitif dan memuaskan.
